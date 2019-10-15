@@ -12,8 +12,10 @@ body {
     margin: 0;
     /*background: #222;*/
     font-family: 'Work Sans', sans-serif;
-    background: #333;
+    background: rgb(78, 76, 76);
 }
+
+
 
 /*.content {
     height: 200vh;
@@ -186,11 +188,13 @@ input[type=text]:focus {
  
  .header-content {
      z-index: 2;
+     padding-top: 4em;
  }
  
  .header-content h1 {
    font-size: 40px;
    margin-bottom: .50em;
+   padding-top: 0;
 }
  
  .header-content p {
@@ -207,12 +211,14 @@ input[type=text]:focus {
     padding: .80rem 3rem;
     text-decoration: none; 
     border-radius: 25px;
+    
 }
 
  .btn:hover {
-    background: #8963f1;;
+    background: #8963f1;
     cursor: pointer;
     color: #ffbbab;
+    
  }
 
  .search-box {
@@ -220,13 +226,15 @@ input[type=text]:focus {
      align-items: center;
      display: flex;
      color: #fff;
- }
+     margin-top: 4em;
+}
 
- h2 {
-     margin-bottom:20px;
-     font-size: 20px;
-     letter-spacing: 2px;
+ .search-box h5 {
+     margin-bottom:25px;
+     font-size: 1.5rem;
+     letter-spacing: 1px;
      text-align: center;
+    
  }
 
  .search-field {
@@ -250,7 +258,7 @@ input[type=text]:focus {
     width: 150px;
     background: #ffbbab;
     border: none;
-    color: #000;
+    color: #8963f1;
     border-radius: 25px;
 } 
 
@@ -261,7 +269,7 @@ input[type=text]:focus {
 }
 
 .form-box {
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.4);
     padding: 30px;
     border-radius: 25px;
 }
@@ -269,29 +277,239 @@ input[type=text]:focus {
 .featured-places {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    max-width: 50em;
-    margin: 0 auto; 
+    /*max-width: 100%;
+    height: auto; */
 }
 
 .img {
-   display: inline-block;
+   display: block;
    width: 100%;
-   height: 240px;
-  
+   height: 300px;
+   object-fit: fixed;
    margin-bottom: 2em;
 }
 
- 
-.article {
-    padding: 20px 0;
+
+
+.main-content {
+   
+    /*padding: 10%;
+    flex: 1 1 80%;
+    min-height: 100vh;*/
 }
 
-.article-b {
-    background: #333;
-    color: #fff;
+.portfolio {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    width: 100%;
 }
 
-@media screen and (min-width: 800px) {
+.portfolio-item {
+    /*background: tomato;*/
+    color: black;
+    font-weight: 300;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.portfolio-item.main-header {
+    grid-row: span 1;
+    grid-column: span 5;
+}
+
+.portfolio-item.header {
+    grid-row: span 2;
+    grid-column: span 1;
+}
+
+.portfolio-item.main-img {
+    grid-row: span 3;
+    grid-column: span 4;
+}
+
+.portfolio-item.text {
+    grid-row: 2;
+    grid-column:2;
+}
+
+.portfolio-item.image-2 {
+    grid-row: span 4;
+    grid-column: span 1;
+}
+
+.portfolio-item.button {
+    grid-row: span 3;
+    grid-column: span 4;
+}
+
+.main-img-item {
+    background-image: url("../img/badak_lake_8.jpg");
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    
+}
+
+.main-img-item::before {
+    content: '';
+    display: block;
+    background: black;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all ease-in-out 300ms;
+    z-index: -1;
+  }
+
+  .main-img-item:hover::before {
+    opacity: 0.2;
+  }
+
+.main-header h1 {
+    text-align: center;
+    font-size: 1.7em;
+    color: white;
+    font-family: 'ralaway'sans-serif;
+    border-bottom: 0.1px solid grey;
+    border-bottom-width: 50%;
+    padding-bottom: 1em;
+}
+.main-header span {
+    color: #8963f1;
+}
+
+.header {
+    padding: 1em;
+    color: white;
+    line-height: 1.5em;
+}
+
+.header h3{
+    color: #8963f1;
+}
+.header a {
+    background: #8963f1;
+    color: #ffbbab;
+    font-size: .8rem;
+    padding: .60rem 2rem;
+    text-decoration: none; 
+}
+
+.header a:hover {
+    background: #ffbbab;
+    cursor: pointer;
+    color: #8963f1;
+ }
+  
+
+
+
+
+
+
+
+
+.places {
+   display: block;
+   text-align: left;
+  
+}
+
+.places img {
+  width: 400px;
+  height: 400px;
+  float: right;
+
+}
+
+
+
+@media screen and (min-width: 500px) {
+    
+    .btn {
+        font-size: 1rem;
+        padding: .60rem 1.5rem;
+    }
+    .business {
+        width: 180px;
+        height: 40px;
+    }
+   
+    .location {
+        width: 120px;
+        height: 40px;
+    }
+    .search-btn {
+        height: 40px;
+        width: 90px;
+    }
+    .form-box {
+        padding: 20px;
+        border-radius: 25px;
+    }
+
+    .search-box h5 {
+        margin-bottom:18px;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .featured-places {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 0;
+    }
+    
+    .featured-places img {
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .portfolio-item.main-header {
+     padding: .5em;
+     text-align: center;
+}
+
+   
+    .portfolio-item.header {
+        grid-row: span 2;
+        grid-column: span 1;
+    }
+
+    .portfolio-item.main-img {
+        grid-row: span 2;
+        grid-column: span 4;
+    }
+
+    .portfolio-item.image-2 {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    
+    .portfolio-item.button {
+        grid-row: span 1;
+        grid-column: span 4;
+    }
+
+    .header h3 {
+        padding-top: 0;
+    }
+    
+}
+
+@media screen and (min-width: 960px) {
     .nav-toggle-label {
         display: none;
     }
@@ -344,6 +562,8 @@ input[type=text]:focus {
         transform: scale(1,1);
     }
 }
+
+
 
 
 /*@media (max-width:960px) {
