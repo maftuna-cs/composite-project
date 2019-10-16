@@ -284,7 +284,6 @@ input[type=text]:focus {
 .img {
    display: block;
    width: 100%;
-
    object-fit: fixed;
    margin-bottom: 2em;
 }
@@ -376,7 +375,7 @@ input[type=text]:focus {
     opacity: 0.2;
   }
 
-.main-header h1 {
+/*.main-header h1 {
     text-align: center;
     font-size: 1.7em;
     color: grey;
@@ -387,7 +386,7 @@ input[type=text]:focus {
 }
 .main-header span {
     color: #8963f1;
-}
+}*/
 
 .header {
     padding: 1em;
@@ -405,7 +404,6 @@ input[type=text]:focus {
     padding: .60rem 2rem;*/
     text-decoration: none; 
     font-size: .8em;
-    
 }
 
 /*.header a:hover {
@@ -421,6 +419,127 @@ input[type=text]:focus {
     background: #8963f1;
     color: rgb(56, 56, 56);
   }
+
+  /* S E C T I O N - 1*/
+
+
+  .main-header h1 {
+    text-align: center;
+    font-size: 1.7em;
+    color: grey;
+    font-family: 'ralaway'sans-serif;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    
+    
+}
+.main-header span {
+    color: #8963f1;
+}
+
+
+.section1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 2em;
+    height: 100%;
+    color: grey;
+    border-top: 0.2px solid grey;
+    margin: 1em;
+    padding-top: 1em;
+    font-family: 'ralaway'sans-serif;
+    line-height: 2em;
+}
+
+.section1-img-1 {
+    background-image: url("../img/aral-02.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    padding: 30px 150px;
+    width: 100%;
+    height: 600px;
+    z-index: 10;
+    margin-top: .5em
+}
+
+.section1-img-2 {
+    background-image: url("../img/aral-01.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    padding: 30px 150px;
+    width: 100%;
+    height: 500px;
+    z-index: 10;
+    margin-top: -20em;
+}
+
+.section1-text-1 h4{
+   color: #8963f1;
+}
+.section1-text-1 a {
+   text-decoration: none;
+   color: #8963f1;
+}
+
+
+
+
+  /* A R T I C L E */
+
+  .mid-section {
+    display: grid;
+    /*grid-template-rows: repeat(4, 1fr);*/
+    grid-template-columns: repeat(2, 1fr); 
+    height: 100%;
+    grid-gap: 1em;
+    color: black;
+ }
+
+ .mid-section.img-1 {
+    grid-row: span 1;
+    grid-column: span 1;
+ }
+
+ .mid-section.img-2 {
+    grid-row: span 1;
+    grid-column: span 1;
+ }
+
+ .section-2 {
+    background-image: url("../img/ugam-01.jpeg");
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    padding: 30px 150px;
+    width: 100%;
+    height: 400px;
+    z-index: 10;
+}
+
+.section-2::before {
+    content: '';
+    display: block;
+    background: black;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all ease-in-out 300ms;
+    z-index: -1;
+  }
+
+.section-2:hover::before {
+    opacity: 0.2;
+  }
+  
+
+
+ /* F O O T E R */
+
 
   .footer-grid-1 {
     display: grid;
@@ -484,7 +603,7 @@ input[type=text]:focus {
 
 
 
-
+/* M O B I L E */
 
 @media screen and (min-width: 500px) {
     
@@ -560,9 +679,17 @@ input[type=text]:focus {
     
 }
 
+
+
+
 @media screen and (min-width: 750px){
 
 }
+
+
+
+/* D E S K T O P */
+
 
 @media screen and (min-width: 960px) {
     .nav-toggle-label {
@@ -616,6 +743,46 @@ input[type=text]:focus {
     nav a:hover::before {
         transform: scale(1,1);
     }
+
+    .featured-places {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr)
+    }
+
+
+    .search-field {
+        height: 50px;
+        padding: 10px;
+        border: none;
+        border-radius: 25px;
+        outline: none;
+    }
+   
+    .business {
+        width: 300px;
+    }
+   
+    .location {
+        width: 200px;
+    }
+   
+   .search-btn {
+       height: 50px;
+       width: 150px;
+       background: #ffbbab;
+       border: none;
+       color: #8963f1;
+       border-radius: 25px;
+   } 
+
+   .btn {
+    font-size: 1.2rem;
+    padding: .80rem 3rem;
+   }
+
+   
+
+   
 }
 
 
