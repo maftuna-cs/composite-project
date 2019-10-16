@@ -10,22 +10,11 @@
 
 body {
     margin: 0;
-    /*background: #222;*/
     font-family: 'Work Sans', sans-serif;
     background: whitesmoke;
 }
 
-
-
-/*.content {
-    height: 200vh;
-    background-image: url("../img/img-03.jpeg");
-    background-color: #333;
-    background-blend-mode: multiply;
-    background-size: cover;
-    display: grid;
-    place-items: center;
-}*/
+/* N A V I G A T I O N */
 
 header {
     background: var(--background);
@@ -123,25 +112,7 @@ nav a:hover {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
-/*form {
-    width: 45%;
-    float: right;
-}
-
-input[type=text] {
-   width:150px;
-   box-sizing: border-box;
-   border: 2px solid #ccc;
-   border-radius: 25px;
-   font-size: 16px;
-   background-color: transparent;
-   padding: 12px 20px 12px 40px;
-   transition: width 0.4s ease-in-out; 
-}
-
-input[type=text]:focus {
-    width: 80%;
-}*/
+/* V I D E O    B A C K G R O U N D */
 
 
 .v-header {
@@ -274,6 +245,8 @@ input[type=text]:focus {
     border-radius: 25px;
 }
 
+/* FEATURED PLACES */
+
 .featured-places {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -288,151 +261,18 @@ input[type=text]:focus {
    margin-bottom: 2em;
 }
 
+/* S E C T I O N - 1*/
 
-
-.main-content {
-   margin-bottom: 0;
-    /*padding: 10%;
-    flex: 1 1 80%;
-    min-height: 100vh;*/
-}
-
-.portfolio {
-    display: grid;
-    height: 100%;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5px;
-    width: 100%;
-}
-
-.portfolio-item {
-    /*background: tomato;*/
-    color: black;
-    font-weight: 300;
-    /*display: flex;*/
-    justify-content: center;
-    align-items: center;
-    
-    
-}
-
-.portfolio-item.main-header {
-    grid-row: span 1;
-    grid-column: span 5;
-}
-
-.portfolio-item.header {
-    grid-row: span 2;
-    grid-column: span 1;
-}
-
-.portfolio-item.main-img {
-    grid-row: span 3;
-    grid-column: span 4;
-}
-
-.portfolio-item.text {
-    grid-row: 2;
-    grid-column:2;
-}
-
-.portfolio-item.image-2 {
-    grid-row: span 4;
-    grid-column: span 1;
-}
-
-.portfolio-item.button {
-    grid-row: span 1;
-    grid-column: span 4;
-}
-
-.main-img-item {
-    background-image: url("../img/badak_lake_8.jpg");
-    background-size: cover;
-    position: relative;
-    width: 100%;
-    height: auto;
-    z-index: 10;
-    
-}
-
-.main-img-item::before {
-    content: '';
-    display: block;
-    background: black;
-    opacity: 0.8;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transition: all ease-in-out 300ms;
-    z-index: -1;
-  }
-
-.main-img-item:hover::before {
-    opacity: 0.2;
-  }
-
-/*.main-header h1 {
-    text-align: center;
-    font-size: 1.7em;
-    color: grey;
-    font-family: 'ralaway'sans-serif;
-    border-bottom: 0.1px solid grey;
-    border-bottom-width: 50%;
-    padding-bottom: 1em;
-}
-.main-header span {
-    color: #8963f1;
-}*/
-
-.header {
-    padding: 1em;
-    color: grey;
-    line-height: 1.5em;
-}
-
-.header h3{
-    color: #8963f1;
-}
-.header a {
-    /*background: #8963f1;
-    color: #ffbbab;
-    font-size: .8rem;
-    padding: .60rem 2rem;*/
-    text-decoration: none; 
-    font-size: .8em;
-}
-
-/*.header a:hover {
-    background: #ffbbab;
-    cursor: pointer;
-    color: #8963f1;
- }*/
-
- .icon-style {
-    padding: 1em 1em;
-    text-align: center;
-    letter-spacing: .5em;
-    background: #8963f1;
-    color: rgb(56, 56, 56);
-  }
-
-  /* S E C T I O N - 1*/
-
-
-  .main-header h1 {
+.main-header h1 {
     text-align: center;
     font-size: 1.7em;
     color: grey;
     font-family: 'ralaway'sans-serif;
     padding-top: 1em;
     padding-bottom: 1em;
-    
-    
 }
+
+
 .main-header span {
     color: #8963f1;
 }
@@ -440,15 +280,16 @@ input[type=text]:focus {
 
 .section1 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-gap: 2em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: .8em 2em; 
     height: 100%;
     color: grey;
     border-top: 0.2px solid grey;
     margin: 1em;
-    padding-top: 1em;
+    padding-top: 3em;
     font-family: 'ralaway'sans-serif;
-    line-height: 2em;
+    line-height: 1.8em;
+    margin-bottom: 4em;
 }
 
 .section1-img-1 {
@@ -475,8 +316,9 @@ input[type=text]:focus {
     margin-top: -20em;
 }
 
-.section1-text-1 h4{
+h4 {
    color: #8963f1;
+   
 }
 .section1-text-1 a {
    text-decoration: none;
@@ -484,44 +326,52 @@ input[type=text]:focus {
 }
 
 
+.section1-icon-st {
+    letter-spacing: 6em;
+    padding: 2em 3em;
+    margin-top: 1em;
+    border-top: 0.1px solid grey;
+    display: flex;
+    
+ }
 
+  .section1-icon-st a {
+      color: grey;
+      text-decoration: none;
+  }
+ 
 
-  /* A R T I C L E */
+/* S E C T I O N - 2 */
+ /* A R T I C L E */
 
   .mid-section {
     display: grid;
-    /*grid-template-rows: repeat(4, 1fr);*/
     grid-template-columns: repeat(2, 1fr); 
     height: 100%;
-    grid-gap: 1em;
-    color: black;
+    grid-gap: .8em 2em;
+    color: white;
+    margin-top: 4em;
+    margin: 1em;
+    border-top: 0.1px solid grey;
+    
  }
 
- .mid-section.img-1 {
-    grid-row: span 1;
-    grid-column: span 1;
- }
-
- .mid-section.img-2 {
-    grid-row: span 1;
-    grid-column: span 1;
- }
-
- .section-2 {
-    background-image: url("../img/ugam-01.jpeg");
+ .section-2-img1 {
+    background-image: url("../img/badak_lake_8.jpg");
     background-size: cover;
     position: relative;
     background-position: center center;
-    padding: 30px 150px;
+    padding: 6em 2em;
     width: 100%;
-    height: 400px;
+    height: 500px;
     z-index: 10;
+    margin-bottom: 2em;
+    
 }
-
-.section-2::before {
+.section-2-img1::before {
     content: '';
     display: block;
-    background: black;
+    background: #8963f1;
     opacity: 0.8;
     position: absolute;
     top: 0;
@@ -532,10 +382,87 @@ input[type=text]:focus {
     z-index: -1;
   }
 
-.section-2:hover::before {
+.section-2-img1:hover::before {
     opacity: 0.2;
   }
+
+  .section-2-img2 {
+    background-image: url("../img/charvak-01.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    padding: 6em 2em;
+    width: 100%;
+    height: 500px;
+    z-index: 10;
+    margin-bottom: 2em;
+}
+
+.section-2-img2::before {
+    content: '';
+    display: block;
+    background: #8963f1;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all ease-in-out 300ms;
+    z-index: -1;
+  }
+
+.section-2-img2:hover::before {
+    opacity: 0.2;
+  }
+
+  .mid-section a {
+      text-decoration: none;
+      color: #ffbbab;
+  }
+
+  /* S E C T I O N - 3 */
   
+ 
+
+
+.section3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: .8em 2em; 
+    height: 100%;
+    color: grey;
+    border-top: 0.2px solid grey;
+    margin: 1em;
+    padding-top: 3em;
+    font-family: 'ralaway'sans-serif;
+    line-height: 1.8em;
+    margin-bottom: 4em;
+}
+
+.section3-img-1 {
+    background-image: url("../img/img-6.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    padding: 30px 150px;
+    width: 100%;
+    height: 600px;
+    z-index: 10;
+    margin-top: .5em
+}
+
+.section3-img-2 {
+    background-image: url("../img/khiva-03.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    padding: 30px 150px;
+    width: 100%;
+    height: 500px;
+    z-index: 10;
+    margin-top: -20em;
+}
 
 
  /* F O O T E R */
