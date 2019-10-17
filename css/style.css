@@ -247,6 +247,8 @@ nav a:hover {
 
 /* FEATURED PLACES */
 
+
+
 .featured-places {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -342,7 +344,7 @@ h4 {
  
 
 /* S E C T I O N - 2 */
- /* A R T I C L E */
+
 
   .mid-section {
     display: grid;
@@ -423,10 +425,7 @@ h4 {
 
   /* S E C T I O N - 3 */
   
- 
-
-
-.section3 {
+ .section3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: .8em 2em; 
@@ -463,6 +462,19 @@ h4 {
     z-index: 10;
     margin-top: -20em;
 }
+
+/* S E C T I O N - 4 */
+
+.last-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: .5em;
+    border-top: 0.1px solid grey;
+    padding-top: 4em;
+    height: 800px;
+}
+
+
 
 
  /* F O O T E R */
@@ -514,8 +526,6 @@ h4 {
     font-size: .5rem;
     padding: .80rem 3rem;
     text-decoration: none; 
-    
-    
 }
 
 
@@ -574,35 +584,26 @@ h4 {
         width: 100%;
     }
 
-    .portfolio-item.main-header {
-     padding: .5em;
-     text-align: center;
-    }
-
-   
-    .portfolio-item.header {
-        grid-row: span 2;
-        grid-column: span 1;
-    }
-
-    .portfolio-item.main-img {
-        grid-row: span 2;
-        grid-column: span 4;
-    }
-
-    .portfolio-item.image-2 {
-        grid-row: span 1;
-        grid-column: span 1;
-    }
     
-    .portfolio-item.button {
-        grid-row: span 1;
-        grid-column: span 4;
-    }
-
     .header h3 {
         padding-top: 0;
     }
+
+    .mid-section {
+        display: grid;
+        grid-template-columns: 1fr; 
+       
+    }
+
+    
+
+    
+
+    
+    
+    
+
+    
     
 }
 
@@ -706,6 +707,51 @@ h4 {
     font-size: 1.2rem;
     padding: .80rem 3rem;
    }
+
+   .section1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: .8em 2em; 
+  
+}
+
+.mid-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    height: 100%;
+    grid-gap: .8em 2em;
+    color: white;
+    margin-top: 4em;
+    margin: 1em;
+    border-top: 0.1px solid grey;
+}
+
+.msg-box {
+    background: grey;
+    padding: 2em;
+    margin-bottom: .5em;
+    text-align: center;
+    color: grey;
+}
+
+.msg-box h3{
+ color: white;
+ padding-top: 1em
+}
+ .msg-box p {
+     background: #ffffff;
+     padding: .7em;
+     text-align: left;
+     font-size: .5em;
+}
+
+.p-3 {
+   padding:4em;
+   height: 70px;
+   margin-bottom: 2em;
+}
+
+   
 
    
 
