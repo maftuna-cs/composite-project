@@ -323,7 +323,7 @@ h4 {
    color: #8963f1;
    
 }
-.section1-text-1 a {
+.section3-text-1 a {
    text-decoration: none;
    color: #8963f1;
 }
@@ -464,6 +464,11 @@ h4 {
     margin-top: -20em;
 }
 
+.section1-text-1 a {
+    text-decoration: none;
+    color: #8963f1;
+}
+
 /* S E C T I O N - 4 */
 
 .last-section {
@@ -473,6 +478,15 @@ h4 {
     border-top: 0.1px solid grey;
     padding-top: 4em;
     height: 800px;
+}
+
+.last-section a {
+    text-decoration: none;
+}
+
+.last-section-text {
+    color: grey;
+    text-align: center;
 }
 
 
@@ -528,6 +542,8 @@ h4 {
     padding: .80rem 3rem;
     text-decoration: none; 
 }
+
+
 
 
   
@@ -596,13 +612,18 @@ h4 {
        
     }
 
+   
 }
 
 
 
 
 @media screen and (min-width: 750px){
+    .last-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
 
+}
 }
 
 
@@ -742,11 +763,10 @@ h4 {
    margin-bottom: 2em;
 }
 
-   
-
-   
-
-   
+.last-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr)
+}
 }
 
 
