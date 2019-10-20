@@ -275,8 +275,8 @@ nav a:hover {
     opacity: .8;
     font-weight: 500;
     color: #ffbbab;
-    
-  }
+    width: 12em;
+}
 
 
 .img {
@@ -774,6 +774,19 @@ h4 {
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 0;
     }
+
+    .featured-places-container {
+        position: relative;
+        text-align: center;
+        color: white; 
+      }
+      
+      .centered-text {
+          padding: 1em .6em;
+          font-size: 1em;
+          width: 10em;
+      }
+      
     
     .featured-places img {
         margin-bottom: 0;
@@ -804,6 +817,19 @@ h4 {
 
 
 @media screen and (min-width: 750px){
+    
+    .featured-places {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 0;
+    }
+
+    .centered-text {
+        padding: 1em .6em;
+        font-size: 1em;
+        width: 8em;
+    }
+    
     .last-section {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -873,6 +899,12 @@ h4 {
     .featured-places {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .centered-text {
+        padding: 1em .6em;
+        font-size: 1em;
+        width: 14em;
     }
 
 
