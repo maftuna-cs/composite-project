@@ -192,6 +192,8 @@ nav a:hover {
     
  }
 
+ /* search-box */
+
  .search-box {
      justify-content: center;
      align-items: center;
@@ -217,7 +219,7 @@ nav a:hover {
  }
 
  .business {
-     width: 400px;
+    width: 400px;
  }
 
  .location {
@@ -234,7 +236,7 @@ nav a:hover {
 } 
 
 .search-btn:hover {
-    background: #8963f1;;
+    background: #8963f1;
     cursor: pointer;
     color: #ffbbab;
 }
@@ -257,12 +259,34 @@ nav a:hover {
     
 }
 
+.featured-places-container {
+  position: relative;
+  text-align: center;
+  color: white; 
+}
+
+.centered-text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #8963f1; 
+    padding: 1em;
+    opacity: .8;
+    font-weight: 500;
+    color: #ffbbab;
+    
+  }
+
+
 .img {
    display: block;
    width: 100%;
    object-fit: fixed;
    margin-bottom: 2em;
 }
+
+
 
 /* S E C T I O N - 1*/
 
@@ -561,6 +585,119 @@ h4 {
 
 @media screen and (max-width: 500px) {
     
+   /* .nav-toggle {
+        display: none;
+    }
+    
+    .nav-toggle-label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 1em;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        display: block;
+        background: white;
+        height: 2px;
+        width: 2em;
+        border-radius: 2px;
+        position: relative;
+    }
+    
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        content: '';
+        position: absolute;
+    }
+     
+    .nav-toggle-label span::before {
+        bottom: 7px;
+    }
+    
+    .nav-toggle-label span::after {
+        top: 7px;
+    }
+    
+    .logo {
+      color: white;
+    }
+    
+    
+    nav {
+        position: absolute;
+        text-align: left;
+        top: 100%;
+        left: 0;
+        background-color: var(--background);
+        width: 100%;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform 400ms ease-in-out;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    nav li {
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+    }
+    
+    nav a:hover {
+        color: #000;
+    }
+    
+    .nav-toggle:checked ~ nav {
+        transform: scale(1,1);
+    }
+    
+    .nav-toggle:checked ~ nav a {
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 250ms;
+    }
+
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .nav-toggle-label {
+        grid-column: 1 / 2;
+    }
+
+    .logo {
+        grid-column: 2 / 3;
+    }
+
+    nav {
+        all: unset;
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    } */
+
+
+    
+    
     .btn {
         font-size: 1rem;
         padding: .60rem 1.5rem;
@@ -621,6 +758,7 @@ h4 {
         letter-spacing: 1px;
         text-align: center;
     }
+    
 
     .search-field {
         height: 40px;
@@ -671,14 +809,15 @@ h4 {
         grid-template-columns: repeat(3, 1fr);
 
 }
-}*/
+}
 
 
 
 /* D E S K T O P */
 
 
-/*@media screen and (min-width: 960px) {
+@media screen and (min-width: 960px) {
+    
     .nav-toggle-label {
         display: none;
     }
@@ -733,7 +872,7 @@ h4 {
 
     .featured-places {
         display: grid;
-        grid-template-columns: repeat(4, 1fr)
+        grid-template-columns: repeat(4, 1fr);
     }
 
 
@@ -795,7 +934,7 @@ h4 {
 
 .msg-box h3{
  color: white;
- padding-top: 1em
+ padding-top: 1em;
 }
  .msg-box p {
      background: #ffffff;
@@ -812,7 +951,7 @@ h4 {
 
 .last-section {
     display: grid;
-    grid-template-columns: repeat(5, 1fr)
+    grid-template-columns: repeat(5, 1fr);
 }
 }
 
