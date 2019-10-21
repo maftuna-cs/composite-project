@@ -732,6 +732,14 @@ nav a:hover {
           font-size: 1em;
           width: 10em;
       }
+
+      .intro-heading h1 {
+        
+        font-size: 1em;
+        
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
       
     
     .featured-places img {
@@ -797,6 +805,8 @@ nav a:hover {
         font-size: 1em;
         width: 8em;
     }
+
+    
 
     .squares-container {
         display: grid;
