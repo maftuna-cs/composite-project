@@ -14,6 +14,10 @@ body {
     background: whitesmoke;
 }
 
+
+h4 {
+    color: #8963f1;
+}
 /* N A V I G A T I O N */
 
 header {
@@ -283,97 +287,30 @@ nav a:hover {
    display: block;
    width: 100%;
    object-fit: fixed;
-   margin-bottom: 2em;
+  
 }
 
 
 
-/* S E C T I O N - 1*/
+/* S Q U A R E S */ 
 
-.main-header h1 {
+.intro-heading h1 {
+    background-color: #8963f1;
     text-align: center;
     font-size: 1.7em;
-    color: grey;
+    color: white;
     font-family: 'ralaway'sans-serif;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
-
-.main-header span {
-    color: #8963f1;
+.intro-heading span {
+    color: #ffbbab;
 }
 
-
-.section1 {
+.squares-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: .8em 2em; 
-    height: 100%;
-    color: grey;
-    border-top: 0.2px solid grey;
-    margin: 1em;
-    padding-top: 3em;
-    font-family: 'ralaway'sans-serif;
-    line-height: 1.8em;
-    margin-bottom: 4em;
-}
-
-.section1-img-1 {
-    background-image: url("../img/aral-02.jpg");
-    background-size: cover;
-    position: relative;
-    background-position: center center;
-    padding: 30px 150px;
-    width: 100%;
-    height: 600px;
-    z-index: 10;
-    margin-top: .5em
-}
-
-.section1-img-2 {
-    background-image: url("../img/aral-01.jpg");
-    background-size: cover;
-    position: relative;
-    background-position: center center;
-    padding: 30px 150px;
-    width: 100%;
-    height: 500px;
-    z-index: 10;
-    margin-top: -20em;
-}
-
-h4 {
-   color: #8963f1;
-   
-}
-.section3-text-1 a {
-   text-decoration: none;
-   color: #8963f1;
-}
-
-
-.section1-icon-st {
-    letter-spacing: 6em;
-    padding: 2em 3em;
-    margin-top: 1em;
-    border-top: 0.1px solid grey;
-    display: flex;
-    
- }
-
-  .section1-icon-st a {
-      color: grey;
-      text-decoration: none;
-  }
- 
-
-/* S E C T I O N - 2 */
-
-
-  .mid-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: 1fr 1fr; 
     height: 100%;
     grid-gap: .8em 2em;
     color: white;
@@ -383,8 +320,8 @@ h4 {
     
  }
 
- .section-2-img1 {
-    background-image: url("../img/badak_lake_8.jpg");
+ .squares-img1 {
+    background-image: url("../img/registan-02.jpg");
     background-size: cover;
     position: relative;
     background-position: center center;
@@ -395,7 +332,7 @@ h4 {
     margin-bottom: 2em;
     
 }
-.section-2-img1::before {
+.squares-img1::before {
     content: '';
     display: block;
     background: #8963f1;
@@ -409,12 +346,12 @@ h4 {
     z-index: -1;
   }
 
-.section-2-img1:hover::before {
+.squares-img1:hover::before {
     opacity: 0.2;
   }
 
-  .section-2-img2 {
-    background-image: url("../img/charvak-01.jpg");
+  .squares-img2 {
+    background-image: url("../img/mus-01.jpg");
     background-size: cover;
     position: relative;
     background-position: center center;
@@ -425,7 +362,7 @@ h4 {
     margin-bottom: 2em;
 }
 
-.section-2-img2::before {
+.squares-img2::before {
     content: '';
     display: block;
     background: #8963f1;
@@ -439,18 +376,160 @@ h4 {
     z-index: -1;
   }
 
-.section-2-img2:hover::before {
+.squares-img2:hover::before {
     opacity: 0.2;
   }
 
-  .mid-section a {
+  .squares-container a {
       text-decoration: none;
       color: #ffbbab;
   }
 
-  /* S E C T I O N - 3 */
+
+  /* A R A L   S E A */
+
+.aral-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .8em 2em; 
+    height: 100%;
+    color: grey;
+    border-top: 0.2px solid grey;
+    margin: 1em;
+    padding-top: 3em;
+    font-family: 'ralaway'sans-serif;
+    line-height: 1.8em;
+    margin-bottom: 4em;
+}
+
+.aral-big-img {
+    background-image: url("../img/aral-02.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    padding: 30px 150px;
+    width: 100%;
+    height: 700px;
+    z-index: 10;
+    margin-top: .5em;
+}
+
+.aral-item a {
+   text-decoration: none;
+   color: #8963f1;
+   margin-bottom: 1em;
+}
+
+.aral-small-img {
+    display: block;
+    width: 100%;
+    object-fit: fixed;
+    height: 400px;
+    
+}
+
+/*
+.aral-icon-st {
+    letter-spacing: 6em;
+    padding: 2em 3em;
+    margin-top: 1em;
+    border-top: 0.1px solid grey;
+    display: flex;
+}
+
+
+.aral-icon-st a {
+      color: grey;
+      text-decoration: none;
+}
+
+*/
+ 
+
+
+  /* L A K E S */
+
+
+.lakes-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background: #8963f1;
+    
+}
+
+.lakes-item {
+    position: relative;
+    
+}
+
+.lakes-item::before,
+.lakes-item::after {
+    content: '';
+    position: absolute;
+    top: 1.5em;
+    bottom: 1.5em;
+    left: 1.5em;
+    right:1.5em;
+}
+
+.lakes-item::before {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+}
+
+.lakes-item:hover::before {
+    transform: scale(1.05, 1);
+}
+
+.lakes-item::after {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    transform: scale(1, 0);
+    transition: transform ease-in-out 250ms;
+}
+
+.lakes-item:hover::after {
+    transform: scale(1, 1.05);
+}
+
+.lakes-img {
+    display: block;
+    width: 100%;
+    object-fit: fixed;
+    transition: opacity ease-in-out 300ms;
+    opacity: 1;
+}
+ .lakes-item:hover .lakes-img {
+     opacity: 0.2;
+ }
+
+ .lakes-text {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: white;
+     opacity: 0;
+     transition: opacity ease-in-out 200ms;
+ }
+
+ .lakes-item:hover .lakes-text {
+     opacity: 1;
+ }
+
+ .lakes-container a {
+     text-decoration: none;
+     color: #ffbbab;
+ }
+
+
+/* GUR E AMIR */
   
- .section3 {
+ .amir-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: .8em 2em; 
@@ -464,7 +543,7 @@ h4 {
     margin-bottom: 4em;
 }
 
-.section3-img-1 {
+.amir-big-img {
     background-image: url("../img/img-6.jpg");
     background-size: cover;
     position: relative;
@@ -476,19 +555,8 @@ h4 {
     margin-top: .5em
 }
 
-.section3-img-2 {
-    background-image: url("../img/khiva-03.jpg");
-    background-size: cover;
-    position: relative;
-    background-position: center center;
-    padding: 30px 150px;
-    width: 100%;
-    height: 500px;
-    z-index: 10;
-    margin-top: -20em;
-}
 
-.section1-text-1 a {
+.amir-item a {
     text-decoration: none;
     color: #8963f1;
 }
